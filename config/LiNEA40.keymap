@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,10 +147,10 @@
 
         MARK {
             bindings = <
-&kp F1        &kp F2          &kp F3           &kp F4        &kp F5                                  &kp F6        &kp F7        &kp F8                &kp F9                 &kp F10
-&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0
-&kp INT_KANA  &kp LANGUAGE_5  &kp KP_NUMBER_2  &kp APOS      &kp SQT                                 &kp KP_EQUAL  &kp INT3      &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)
-&trans        &trans          &trans           &trans        &trans        &trans    &kp LEFT_SHIFT  &kp LEFT_WIN                &kp COMMA             &kp PERIOD             &kp LEFT_SHIFT
+&kp F1        &kp F2             &kp F3           &kp F4        &kp F5                                  &kp F6        &kp F7        &kp F8                &kp F9                 &kp F10
+&kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0
+&kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp APOS      &kp SQT                                 &kp KP_EQUAL  &kp INT3      &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)
+&trans        &trans             &trans           &trans        &trans        &trans    &kp LEFT_SHIFT  &kp LEFT_WIN                &kp COMMA             &kp PERIOD             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -160,10 +160,10 @@
 
         CURSOR {
             bindings = <
-&kp ESC         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                          &kp HOME      &kp NUMBER_7  &kp UP_ARROW  &kp NUMBER_9  &kp PAGE_UP
-&kp TAB         &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                          &kp END       &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN
-&kp CAPS        &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                          &kp UNDER     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&kp LEFT_SHIFT  &trans                  &trans        &trans                   &trans  &kp LCTRL    &kp ENTER  &kp NUMBER_0                &kp DOT       &kp ENTER     &kp QUESTION
+&kp ESC         &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                          &kp HOME      &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &kp PAGE_UP
+&kp TAB         &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                          &kp END       &kp LEFT      &kp DOWN      &kp RIGHT      &kp PAGE_DOWN
+&kp CAPS        &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                          &kp UNDER     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp ENTER
+&kp LEFT_SHIFT  &trans                  &trans        &trans                   &trans  &kp LCTRL    &kp ENTER  &kp NUMBER_0                &kp DOT       &kp ENTER      &kp QUESTION
             >;
         };
 
